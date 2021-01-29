@@ -10,8 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float horizontalSpeed = 5f;
     [SerializeField] float jumpForce = 5f;
     [SerializeField] int jumpLimit = 2;
-
-    [Header("Abilities")]
+    
     [Header("Dash")]
     [SerializeField] float dashSpeed = 10f;
     [SerializeField] float dashTime = 0.3f;
@@ -56,13 +55,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J))
         {
-            if(dashLimitCounter <= dashLimit)
+            if(dashLimitCounter < dashLimit)
             {
                 isDashing = true;
-                dashLimitCounter++;
             }
         }
-
         horizontalMovement = Input.GetAxis("Horizontal");
         dashDirectionValues = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         Jump();
@@ -180,6 +177,16 @@ public class PlayerMovement : MonoBehaviour
         else if (dashDirectionValues.y < 0) y = -1;
         else y = 0;
 
+        if(x != 0 && y != 0)
+        {
+            float diagonalForce = 1/Mathf.Sqrt(2);
+
+            if (x < 0) x = -diagonalForce;
+            else x = diagonalForce;
+
+            if (y < 0) y = -diagonalForce;
+            else y = diagonalForce;
+        }
         return new Vector2(x, y);
     }
 
