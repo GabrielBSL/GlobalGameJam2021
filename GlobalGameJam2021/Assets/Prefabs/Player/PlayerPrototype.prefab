@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 3889798365533912337}
   - component: {fileID: 3889798365533912336}
   - component: {fileID: 3889798365533912339}
+  - component: {fileID: 5592501928726819178}
   m_Layer: 0
   m_Name: PlayerPrototype
   m_TagString: Untagged
@@ -226,6 +227,18 @@ MonoBehaviour:
   gravityScale: 8
   jumpExtensionTime: 0.15
   maxFallVelocity: 10
+--- !u!114 &5592501928726819178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3889798365533912338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348faad0be9012a4abe74b42ecaa3ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3889798366031242682
 GameObject:
   m_ObjectHideFlags: 0
