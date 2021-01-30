@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Serializable]
+    class AudioSample
+    {
+        public string name;
+        public AudioClip[] audios;
+    }
+
     //Serializable variables
     [Header("Movement")]
     [SerializeField] float horizontalSpeed = 5f;
@@ -23,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpExtensionTime = 0.3f;
     [SerializeField] float maxFallVelocity = 10f;
 
+    [Header("SoundEffects")]
+    [SerializeField] AudioSample[] SoundEffects;
+
     //Private variables
     private float horizontalMovement;
     private float jumpExtensionTimer = 0;
@@ -39,10 +49,14 @@ public class PlayerMovement : MonoBehaviour
 
     //Player Components
     private Rigidbody2D rigidbody;
+    private Animator animator;
+    private AudioSource audioSource;
 
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -55,14 +69,30 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J))
         {
-            if(dashLimitCounter < dashLimit)
+            if (dashLimitCounter < dashLimit)
             {
                 isDashing = true;
             }
         }
         horizontalMovement = Input.GetAxis("Horizontal");
-        dashDirectionValues = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        dashDirectionValues = GetKeyDirection();
         Jump();
+    }
+
+    private static Vector2 GetKeyDirection()
+    {
+        int x = 0;
+        int y = 0;
+
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) x = -1;
+        else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) x = 1;
+        
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) y = 1;
+        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) y = -1;
+
+        Debug.Log(new Vector2(x, y));
+
+        return new Vector2(x, y);
     }
 
     private void FixedUpdate()
@@ -77,8 +107,17 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Move();
-        fall();
-        jumpExtension();
+        Fall();
+        JumpExtension();
+        CheckIdle();
+    }
+
+    private void CheckIdle()
+    {
+        if(rigidbody.velocity == Vector2.zero)
+        {
+            SetAnimation("");
+        }
     }
 
     private void Jump()
@@ -89,6 +128,15 @@ public class PlayerMovement : MonoBehaviour
             jumpTimeCounter = 0;
             isJumping = true;
             rigidbody.velocity = Vector2.up * jumpForce;
+
+            if(jumpLimitCounter == 1)
+            {
+                SetAnimation("jump");
+            }
+            else
+            {
+                SetAnimation("doublejump");
+            }
         }
 
         else if (Input.GetKey(KeyCode.Space))
@@ -127,6 +175,10 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         rigidbody.velocity = new Vector2(horizontalMovement * horizontalSpeed, rigidbody.velocity.y);
+        if(rigidbody.velocity.x != 0 && rigidbody.velocity.y == 0)
+        {
+            SetAnimation("walk");
+        }
     }
 
     private void Dash()
@@ -135,9 +187,15 @@ public class PlayerMovement : MonoBehaviour
         {
             if (dashTimerCounter < dashTime)
             {
+                if (dashTimerCounter == 0)
+                    PlaySFX("dash");
+
                 dashTimerCounter += Time.deltaTime;
                 Vector2 dashDirection = dashDirectionCorrection(dashDirectionValues);
                 rigidbody.velocity = dashDirection * dashSpeed;
+                SetAnimation("dash");
+
+                
             }
             else
             {
@@ -190,12 +248,16 @@ public class PlayerMovement : MonoBehaviour
         return new Vector2(x, y);
     }
 
-    private void fall()
+    private void Fall()
     {
         rigidbody.velocity = new Vector2(rigidbody.velocity.x, Mathf.Max(rigidbody.velocity.y, maxFallVelocity * -1f));
+        if(rigidbody.velocity.y < 0)
+        {
+            SetAnimation("fall");
+        }
     }
 
-    private void jumpExtension()
+    private void JumpExtension()
     {
         if(isJumpExtensioning)
         {
@@ -229,5 +291,38 @@ public class PlayerMovement : MonoBehaviour
         {
             isJumpExtensioning = true;
         }
+    }
+
+    private void SetAnimation(string animName)
+    {
+        animator.SetBool("walk", "walk".Equals(animName));
+        animator.SetBool("jump", "jump".Equals(animName));
+        animator.SetBool("doublejump", "doublejump".Equals(animName));
+        animator.SetBool("fall", "fall".Equals(animName));
+        animator.SetBool("death", "death".Equals(animName));
+        animator.SetBool("dash", "dash".Equals(animName));
+    }
+
+    private void PlaySFX(string name)
+    {
+        audioSource.Stop();
+
+        for (int i = 0; i < SoundEffects.Length; i++)
+        {
+            if(SoundEffects[i].name == name)
+            {
+                int randomSFX = UnityEngine.Random.Range(0, SoundEffects[i].audios.Length);
+
+                audioSource.clip = SoundEffects[i].audios[randomSFX];
+                audioSource.Play();
+                break;
+            }
+        }
+    }
+
+    //Animation function
+    public void animationSound(string name)
+    {
+        PlaySFX(name);
     }
 }
