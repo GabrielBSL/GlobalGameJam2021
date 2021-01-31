@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GoToScene : MonoBehaviour
 {
-    enum DestinationIdenifier
+    public enum DestinationIdenifier
     {
         A, B, C
     }
@@ -25,7 +25,14 @@ public class GoToScene : MonoBehaviour
         }
     }
 
-    IEnumerator TransiteScene()
+    public void RemoteTransite(string sceneName, DestinationIdenifier index)
+    {
+        scene = sceneName;
+        portalIndex = index;
+        StartCoroutine(TransiteScene());
+    }
+
+    public IEnumerator TransiteScene()
     {
         DontDestroyOnLoad(gameObject);
 
@@ -37,6 +44,7 @@ public class GoToScene : MonoBehaviour
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         player.transform.position = otherPortal.spawnPoint.position;
+        player.GetComponent<HitManager>().SetSceneValues(scene, portalIndex);
 
         FindObjectOfType<Fader>().AlphaOne();
         yield return FindObjectOfType<Fader>().FadeOut();
