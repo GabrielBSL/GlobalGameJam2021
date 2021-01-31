@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1738,6 +1738,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2093032424}
     m_Modifications:
+    - target: {fileID: 5988452356138401345, guid: 1aead96f3fec70544a1e6be1b6d420ae,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 2093032421}
+    - target: {fileID: 5988452356234246874, guid: 1aead96f3fec70544a1e6be1b6d420ae,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 2093032421}
     - target: {fileID: 5988452356921689085, guid: 1aead96f3fec70544a1e6be1b6d420ae,
         type: 3}
       propertyPath: m_RootOrder
@@ -1798,6 +1808,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeadForestBackground
       objectReference: {fileID: 0}
+    - target: {fileID: 5988452357286730815, guid: 1aead96f3fec70544a1e6be1b6d420ae,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 2093032421}
+    - target: {fileID: 5988452357666783755, guid: 1aead96f3fec70544a1e6be1b6d420ae,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 2093032421}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aead96f3fec70544a1e6be1b6d420ae, type: 3}
 --- !u!4 &964577278 stripped
