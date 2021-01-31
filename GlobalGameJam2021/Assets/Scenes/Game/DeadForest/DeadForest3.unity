@@ -814,6 +814,12 @@ Transform:
   m_Father: {fileID: 1080318951}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &552565020 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+    type: 3}
+  m_PrefabInstance: {fileID: 1596560438}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &685020356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,6 +2848,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1142348350}
   scene: DeadForest4
   portalIndex: 1
+  nextMusic: 
 --- !u!61 &1383975943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3093,6 +3100,106 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1426679852}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1521469067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1521469068}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1521469068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521469067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 552565020}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1596560438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1521469068}
+    m_Modifications:
+    - target: {fileID: 2168355607482221142, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_Name
+      value: Rat
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121322334962103045, guid: 548fc24b057e1154c88793a5a8cc6593,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 548fc24b057e1154c88793a5a8cc6593, type: 3}
 --- !u!1 &1636723856
 GameObject:
   m_ObjectHideFlags: 0
@@ -4088,6 +4195,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1912143}
   scene: DeadForest2
   portalIndex: 0
+  nextMusic: 
 --- !u!61 &1922072744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4535,7 +4643,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093032421}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5587087, y: 4.726824, z: -10}
+  m_LocalPosition: {x: 4.583096, y: 4.726824, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 964577278}
