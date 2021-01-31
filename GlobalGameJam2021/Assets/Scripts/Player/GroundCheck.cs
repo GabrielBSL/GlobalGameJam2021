@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GroundCheck : MonoBehaviour
 {
-    [SerializeField] PlayerMovement player;
+    [SerializeField] PlayerController player;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
