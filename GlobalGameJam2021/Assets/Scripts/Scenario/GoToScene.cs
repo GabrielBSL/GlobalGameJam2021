@@ -15,6 +15,10 @@ public class GoToScene : MonoBehaviour
     public string scene;
     [SerializeField] DestinationIdenifier portalIndex;
 
+    public string nextMusic = "";
+
+    private bool ignoreMusic = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
@@ -29,6 +33,7 @@ public class GoToScene : MonoBehaviour
     {
         scene = sceneName;
         portalIndex = index;
+        ignoreMusic = true;
         StartCoroutine(TransiteScene());
     }
 
@@ -36,9 +41,22 @@ public class GoToScene : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
 
+        if(nextMusic != "" && !ignoreMusic)
+        {
+            FindObjectOfType<MusicManager>().FadeOutMusic(FindObjectOfType<Fader>().faderTime);
+        }
+
         yield return FindObjectOfType<Fader>().FadeIn();
 
         yield return SceneManager.LoadSceneAsync(scene);
+
+        if(!ignoreMusic)
+            FindObjectOfType<MusicManager>().changeMusic(nextMusic);
+
+        if (nextMusic != "" && !ignoreMusic)
+        {
+            FindObjectOfType<MusicManager>().FadeInMusic(FindObjectOfType<Fader>().faderTime);
+        }
 
         GoToScene otherPortal = GetOtherPortal();
 

@@ -155,13 +155,15 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             rigidbody.velocity = Vector2.up * jumpForce;
 
-            if(jumpLimitCounter == 1)
+            if (jumpLimitCounter == 1)
             {
                 SetAnimation("jump");
+                PlaySFX("jump");
             }
             else
             {
                 SetAnimation("doublejump");
+                PlaySFX("doublejump");
             }
         }
 
@@ -362,6 +364,7 @@ public class PlayerController : MonoBehaviour
         rigidbody.gravityScale = 0;
         isDead = true;
         SetAnimation("death");
+        PlaySFX("death");
     }
 
     //Animation function

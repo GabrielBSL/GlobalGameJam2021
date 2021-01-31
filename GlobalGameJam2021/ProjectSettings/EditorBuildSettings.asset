@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/DarkSwamp/DarkSwamp4.unity
     guid: 7930ba504c7e6304883540d6fa3e9e5e
+  - enabled: 1
+    path: Assets/Scenes/Game/Cemetery/Cemetery.unity
+    guid: 4756354225937f846a6f8de9ad9cc6dc
   m_configObjects: {}

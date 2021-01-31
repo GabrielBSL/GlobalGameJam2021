@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1116,7 +1116,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 24
+      m_TileSpriteIndex: 33
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1125,7 +1125,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1134,7 +1134,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 24
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1314,7 +1314,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1728,7 +1728,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 33
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2104,17 +2104,15 @@ Tilemap:
   - m_RefCount: 8
     m_Data: {fileID: -4230047624598236898, guid: 45e151706398c5e45993785c01f29b55,
       type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -2007747373115478010, guid: 45e151706398c5e45993785c01f29b55,
       type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 4707186960758580443, guid: a5b2218f8bd3afe42865e97342245a90,
-      type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -8484626243341798937, guid: a5b2218f8bd3afe42865e97342245a90,
-      type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 2689748395354188370, guid: a5b2218f8bd3afe42865e97342245a90,
       type: 3}
   - m_RefCount: 10
     m_Data: {fileID: 1074050934412142680, guid: a5b2218f8bd3afe42865e97342245a90,
@@ -2167,10 +2165,11 @@ Tilemap:
     m_Data: {fileID: 6134544998794001983, guid: 45e151706398c5e45993785c01f29b55,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -7469355660213320209, guid: a5b2218f8bd3afe42865e97342245a90,
+    m_Data: {fileID: -8484626243341798937, guid: a5b2218f8bd3afe42865e97342245a90,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 2689748395354188370, guid: a5b2218f8bd3afe42865e97342245a90,
+      type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -573561016546522564, guid: 45e151706398c5e45993785c01f29b55,
       type: 3}
@@ -2191,8 +2190,9 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -878875082043073847, guid: 45e151706398c5e45993785c01f29b55,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -7469355660213320209, guid: a5b2218f8bd3afe42865e97342245a90,
+      type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 4860005019150081520, guid: 45e151706398c5e45993785c01f29b55,
       type: 3}
@@ -3547,8 +3547,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1142348350}
-  scene: DeadForest2
+  scene: Cemetery
   portalIndex: 1
+  nextMusic: Cemetery
 --- !u!61 &1383975943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4574,6 +4575,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1912143}
   scene: DarkSwamp2
   portalIndex: 0
+  nextMusic: 
 --- !u!61 &1922072744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4907,7 +4909,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093032421}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.89565, y: 4.764247, z: -10}
+  m_LocalPosition: {x: 33.871258, y: 4.764247, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1374076062}
@@ -5491,11 +5493,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 380375289}
     m_Modifications:
-    - target: {fileID: 2033215737927919810, guid: 06771004a7a067d48be6546e2ee3c8af,
-        type: 3}
-      propertyPath: dashLimit
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2033215737927919814, guid: 06771004a7a067d48be6546e2ee3c8af,
         type: 3}
       propertyPath: m_Name
