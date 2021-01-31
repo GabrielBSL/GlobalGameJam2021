@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     private float jumpTimeCounter = 0;
     private int jumpLimitCounter = 1;
     private int dashLimitCounter = 0;
+    private bool isDead = false;
     private bool isJumping = false;
     private bool isFalling = false;
     private bool isDashing = false;
@@ -68,9 +69,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SetFacingDirection();
+        if (isDead) return;
 
-        /*
+        SetFacingDirection();
+        
         if (isDashing) return;
 
         if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.J))
@@ -80,7 +82,6 @@ public class PlayerController : MonoBehaviour
                 dashPressed = true;
             }
         }
-        */
         horizontalMovement = Input.GetAxis("Horizontal");
         dashDirectionValues = GetKeyDirection();
         CheckJumpInputs();
@@ -88,7 +89,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        /*
         Dash();
 
         if (isDashing) { 
@@ -99,7 +99,6 @@ public class PlayerController : MonoBehaviour
         {
             rigidbody.gravityScale = gravityScale;
         }
-        */
 
         Jump();
         Move();
@@ -316,8 +315,6 @@ public class PlayerController : MonoBehaviour
 
     public void SetIsGrounded(bool groundCheck)
     {
-        if (!isFalling) return;
-
         isGrounded = groundCheck;
         
         if (isGrounded)
@@ -357,6 +354,14 @@ public class PlayerController : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public void killPlayer()
+    {
+        rigidbody.velocity = Vector2.zero;
+        rigidbody.gravityScale = 0;
+        isDead = true;
+        SetAnimation("death");
     }
 
     //Animation function
