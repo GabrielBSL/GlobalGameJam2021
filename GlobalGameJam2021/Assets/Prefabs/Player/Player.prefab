@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a45286809ed30f48a3a48200104c82e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2033215737927919815}
+  player: {fileID: 0}
 --- !u!1 &2033215737927919814
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,13 +81,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2033215737927919835}
   - component: {fileID: 2033215737927919834}
-  - component: {fileID: 2033215737927919810}
   - component: {fileID: 2033215737927919813}
   - component: {fileID: 5373818376100803447}
   - component: {fileID: 2033215737927919812}
-  - component: {fileID: 2033215737927919815}
   - component: {fileID: 2033215737927919811}
   - component: {fileID: 6359195166413314313}
+  - component: {fileID: 2033215737927919810}
+  - component: {fileID: 4500222496619550508}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -161,39 +161,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2033215737927919810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033215737927919814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c38eb353e966f49439a82344fc45a6fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalSpeed: 7
-  jumpForce: 10
-  jumpLimit: 2
-  dashSpeed: 20
-  dashTime: 0.15
-  dashLimit: 0
-  jumpTime: 0.3
-  gravityScale: 8
-  jumpExtensionTime: 0.15
-  maxFallVelocity: 10
-  SoundEffects:
-  - name: footstep
-    audios:
-    - {fileID: 8300000, guid: aa9df9517b816814fbcdf38954d66d8b, type: 3}
-    - {fileID: 8300000, guid: a6668a862ebcca54b98d3aa8d553c6d6, type: 3}
-  - name: dash
-    audios:
-    - {fileID: 8300000, guid: c25cc24e319c81145b46997c979ebe78, type: 3}
-    - {fileID: 8300000, guid: 39547af6518b92645ba4e69e798d1239, type: 3}
-    - {fileID: 8300000, guid: 158e813e16191bb4dae473af2b3845ce, type: 3}
-  isGrounded: 0
 --- !u!61 &2033215737927919813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -257,39 +224,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2033215737927919815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033215737927919814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c38eb353e966f49439a82344fc45a6fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontalSpeed: 7
-  jumpForce: 12
-  jumpLimit: 2
-  dashSpeed: 20
-  dashTime: 0.15
-  dashLimit: 1
-  jumpTime: 0.3
-  gravityScale: 8
-  jumpExtensionTime: 0.15
-  maxFallVelocity: 10
-  SoundEffects:
-  - name: footstep
-    audios:
-    - {fileID: 8300000, guid: aa9df9517b816814fbcdf38954d66d8b, type: 3}
-    - {fileID: 8300000, guid: a6668a862ebcca54b98d3aa8d553c6d6, type: 3}
-  - name: dash
-    audios:
-    - {fileID: 8300000, guid: c25cc24e319c81145b46997c979ebe78, type: 3}
-    - {fileID: 8300000, guid: 39547af6518b92645ba4e69e798d1239, type: 3}
-    - {fileID: 8300000, guid: 158e813e16191bb4dae473af2b3845ce, type: 3}
-  isGrounded: 0
 --- !u!95 &2033215737927919811
 Animator:
   serializedVersion: 3
@@ -405,3 +339,48 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2033215737927919810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033215737927919814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c38eb353e966f49439a82344fc45a6fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalSpeed: 7
+  jumpForce: 10
+  jumpLimit: 2
+  dashSpeed: 20
+  dashTime: 0.15
+  dashLimit: 0
+  jumpTime: 0.3
+  gravityScale: 8
+  jumpExtensionTime: 0.15
+  maxFallVelocity: 10
+  SoundEffects:
+  - name: footstep
+    audios:
+    - {fileID: 8300000, guid: aa9df9517b816814fbcdf38954d66d8b, type: 3}
+    - {fileID: 8300000, guid: a6668a862ebcca54b98d3aa8d553c6d6, type: 3}
+  - name: dash
+    audios:
+    - {fileID: 8300000, guid: c25cc24e319c81145b46997c979ebe78, type: 3}
+    - {fileID: 8300000, guid: 39547af6518b92645ba4e69e798d1239, type: 3}
+    - {fileID: 8300000, guid: 158e813e16191bb4dae473af2b3845ce, type: 3}
+  isGrounded: 0
+--- !u!114 &4500222496619550508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033215737927919814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348faad0be9012a4abe74b42ecaa3ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
