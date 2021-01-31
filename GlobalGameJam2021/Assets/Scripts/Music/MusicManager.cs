@@ -20,11 +20,14 @@ public class MusicManager : MonoBehaviour
     {
         MusicManager[] objects = FindObjectsOfType<MusicManager>();
 
-        for (int i = 0; i < objects.Length; i++)
+        if (objects.Length > 1)
         {
-            if(objects[i].gameObject != gameObject)
+            for (int i = 0; i < objects.Length; i++)
             {
-                Destroy(objects[i].gameObject);
+                if (objects[i].gameObject == gameObject)
+                {
+                    Destroy(objects[i].gameObject);
+                }
             }
         }
 

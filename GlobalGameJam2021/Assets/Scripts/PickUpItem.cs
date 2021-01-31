@@ -14,18 +14,14 @@ public class PickUpItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Item"))
+        if (collision.gameObject.CompareTag("Item") && !collision.GetComponent<Item>().picked)
         {
-            for (int i = 0; i < inventory.slots.Length; i++)
+            collision.GetComponent<Item>().picked = true;
+            for (int i = 0; i < inventory.isFull.Length; i++)
             {
                 if (inventory.isFull[i] == false)
                 {
-                    Debug.Log("Coletou Item");
-                    collision.gameObject.SetActive(false);
-                    inventory.isFull[i] = true;
-                    inventory.slots[i].transform.GetChild(0).transform.GetComponent<Image>().sprite = collision.gameObject.GetComponent<SpriteRenderer>().sprite;
-                    inventory.slots[i].SetActive(true);
-                    Destroy(collision.gameObject);
+                    inventory.GotItem(collision.gameObject, i);
                     break;
                 }
             }
