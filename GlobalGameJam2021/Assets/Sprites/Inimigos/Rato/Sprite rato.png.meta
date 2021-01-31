@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 0fcb5f33da28733409e0f64787ede465
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6389116581939001672
+    second: Sprite rato_0
+  - first:
+      213: 8617661717812263976
+    second: Sprite rato_1
+  - first:
+      213: 1286971125593661078
+    second: Sprite rato_2
+  - first:
+      213: 418612993056620511
+    second: Sprite rato_3
+  - first:
+      213: 6510307988007409420
+    second: Sprite rato_4
+  - first:
+      213: -6988292522367892052
+    second: Sprite rato_5
+  - first:
+      213: -8785344861568621019
+    second: Sprite rato_6
+  - first:
+      213: -6045248677715418660
+    second: Sprite rato_7
+  - first:
+      213: -5575106742971579685
+    second: Sprite rato_8
+  - first:
+      213: -7011928697554998787
+    second: Sprite rato_9
+  - first:
+      213: 3409387171827029816
+    second: Sprite rato_10
+  - first:
+      213: -5309174629291043112
+    second: Sprite rato_11
+  - first:
+      213: 7829206049937048583
+    second: Sprite rato_12
+  - first:
+      213: 2848714555968337236
+    second: Sprite rato_13
+  - first:
+      213: 3686622692272615989
+    second: Sprite rato_14
+  - first:
+      213: 4850150019581036163
+    second: Sprite rato_15
+  - first:
+      213: -9088796961491412832
+    second: Sprite rato_16
+  - first:
+      213: 7016874816904407439
+    second: Sprite rato_17
+  - first:
+      213: -2375875916881058528
+    second: Sprite rato_18
+  - first:
+      213: -6883094168966679512
+    second: Sprite rato_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite rato_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 786
+        width: 406
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84938072ea3baa850800000000000000
+      internalID: 6389116581939001672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_1
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 786
+        width: 404
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cbeac8ca5189770800000000000000
+      internalID: 8617661717812263976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_2
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 786
+        width: 400
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ed1398b6d3cd110800000000000000
+      internalID: 1286971125593661078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_3
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 786
+        width: 397
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfb08d9c463fc500800000000000000
+      internalID: 418612993056620511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_4
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 786
+        width: 401
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07d19b3f92495a50800000000000000
+      internalID: 6510307988007409420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 523
+        width: 409
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca54eb9f9f8940f90800000000000000
+      internalID: -6988292522367892052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_6
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 523
+        width: 401
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52626e8256f241680800000000000000
+      internalID: -8785344861568621019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_7
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 523
+        width: 397
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd16fd15b56fa1ca0800000000000000
+      internalID: -6045248677715418660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_8
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 523
+        width: 400
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd24b4894fd31a2b0800000000000000
+      internalID: -5575106742971579685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_9
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 523
+        width: 404
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9edd71000a0be90800000000000000
+      internalID: -7011928697554998787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 261
+        width: 406
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837168ea193905f20800000000000000
+      internalID: 3409387171827029816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_11
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 261
+        width: 412
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6579acdc50256b0800000000000000
+      internalID: -5309174629291043112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_12
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 261
+        width: 417
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70446d7eb6de6ac60800000000000000
+      internalID: 7829206049937048583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_13
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 261
+        width: 421
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4553af6abcaa88720800000000000000
+      internalID: 2848714555968337236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_14
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 261
+        width: 427
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532bdc95ec3892330800000000000000
+      internalID: 3686622692272615989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_15
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 430
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3864b70eeb13f4340800000000000000
+      internalID: 4850150019581036163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_16
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 0
+        width: 425
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a897aa615b1ed180800000000000000
+      internalID: -9088796961491412832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_17
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 0
+        width: 420
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89a8fe0872f06160800000000000000
+      internalID: 7016874816904407439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_18
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 0
+        width: 413
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02526e70171370fd0800000000000000
+      internalID: -2375875916881058528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite rato_19
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 0
+        width: 407
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824bd2f42565a70a0800000000000000
+      internalID: -6883094168966679512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

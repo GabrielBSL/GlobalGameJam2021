@@ -22,13 +22,11 @@ public class DialogueManager : MonoBehaviour
         {
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
         }
-    
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
         nameText.text = dialogue.name;
-        Debug.Log(sentences);
 
         sentences.Clear();
 

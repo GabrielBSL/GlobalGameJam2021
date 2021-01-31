@@ -29,11 +29,11 @@ public class GoToScene : MonoBehaviour
         }
     }
 
-    public void RemoteTransite(string sceneName, DestinationIdenifier index)
+    public void RemoteTransite(string sceneName, DestinationIdenifier index, bool _ignoreMusic)
     {
         scene = sceneName;
         portalIndex = index;
-        ignoreMusic = true;
+        ignoreMusic = _ignoreMusic;
         StartCoroutine(TransiteScene());
     }
 

@@ -8,6 +8,7 @@ TagManager:
   - Spike
   - Item
   - Ghost
+  - Death
   layers:
   - Default
   - TransparentFX

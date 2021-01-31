@@ -30,7 +30,6 @@ public class Ghost : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 dialogueBox.SetActive(true);
-                Debug.Log(dialogue.sentences);
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             }
         }
@@ -85,7 +84,9 @@ public class Ghost : MonoBehaviour
             originalPosition = true;
 
             // esconde a caixa de dialogo caso ele tenha sido iniciado
-            if (dialogueBox.activeSelf == true) dialogueBox.SetActive(false);
+            if (dialogueBox.activeSelf == true) {
+                dialogueBox.SetActive(false);
+            }
         }
     }
 
