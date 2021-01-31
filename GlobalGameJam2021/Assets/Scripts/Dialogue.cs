@@ -7,7 +7,11 @@ using UnityEngine;
 public class Dialogue
 {
     public string name;
+    public bool hasItem;
 
     [TextArea(3, 10)]
-    public string[] sentences;
+    public string[] sentencesWithoutItem;
+
+    [TextArea(3, 10)]
+    public string[] sentencesWithItem;
 }

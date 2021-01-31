@@ -29,11 +29,23 @@ public class DialogueManager : MonoBehaviour
         nameText.text = dialogue.name;
 
         sentences.Clear();
-
-        foreach (string sentence in dialogue.sentences)
+        if(dialogue.hasItem == false)
         {
-            sentences.Enqueue(sentence);
+            foreach (string sentence in dialogue.sentencesWithoutItem)
+            {
+                sentences.Enqueue(sentence);
+                // Debug.Log(sentence);
+            }
         }
+        else
+        {
+            foreach (string sentence in dialogue.sentencesWithItem)
+            {
+                sentences.Enqueue(sentence);
+                // Debug.Log(sentence);
+            }
+        }
+        
 
         DisplayNextSentence();
     }
