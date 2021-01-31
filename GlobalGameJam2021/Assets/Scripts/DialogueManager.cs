@@ -8,16 +8,27 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     public Text nameText;
     public Text dialogueText;
+    public GameObject dialogueBox;
 
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
     }
+    private void Update()
+    {
+        // skip da sentença
+        if (Input.GetKeyDown(KeyCode.F) && dialogueBox.activeInHierarchy == true)
+        {
+            FindObjectOfType<DialogueManager>().DisplayNextSentence();
+        }
+    
+    }
 
     public void StartDialogue(Dialogue dialogue)
     {
         nameText.text = dialogue.name;
+        Debug.Log(sentences);
 
         sentences.Clear();
 
@@ -56,7 +67,6 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        Debug.Log("End of Conversation");
         FindObjectOfType<Ghost>().dialogueBox.SetActive(false);
     }
 }
