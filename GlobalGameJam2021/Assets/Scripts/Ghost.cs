@@ -8,10 +8,10 @@ public class Ghost : MonoBehaviour
     public string objectName;
     public GameObject dialogueBox;
     public GameObject buttonTrigger;
-    bool canBeTrigged, originalPosition, isFlipped;
+    public bool canBeTrigged, originalPosition, isFlipped;
     public Dialogue dialogue;
     public Transform player; // to look at player when he's near
-
+    
     private void Start()
     {
         dialogueBox.SetActive(false);
@@ -31,15 +31,8 @@ public class Ghost : MonoBehaviour
             {
                 dialogueBox.SetActive(true);
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-            }
+            } 
         }
-
-        /* skip da sentença
-        if (Input.GetKeyDown(KeyCode.F) && dialogueBox.activeInHierarchy == true)
-        {
-            FindObjectOfType<DialogueManager>().DisplayNextSentence();
-        }
-        */
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -78,15 +71,19 @@ public class Ghost : MonoBehaviour
         }
 
         // fantasma volta pra posição inicial qnd o player se afasta
-        if (!originalPosition && !canBeTrigged)
+        if (originalPosition == false && canBeTrigged == false)
         {
             Flip();
             originalPosition = true;
 
+            /*
             // esconde a caixa de dialogo caso ele tenha sido iniciado
-            if (dialogueBox.activeSelf == true) {
+            if (dialogueBox.activeSelf == true)
+            {
+                Debug.Log("Fechar");
                 dialogueBox.SetActive(false);
             }
+            */
         }
     }
 
