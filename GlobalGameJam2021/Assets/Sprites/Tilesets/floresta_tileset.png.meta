@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: a5b2218f8bd3afe42865e97342245a90
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4818635006021526847
+    second: floresta_tileset_0
+  - first:
+      213: 6107443110870031447
+    second: floresta_tileset_1
+  - first:
+      213: -1893264267565868034
+    second: floresta_tileset_2
+  - first:
+      213: -1011763286339019044
+    second: floresta_tileset_4
+  - first:
+      213: 4016333187416933455
+    second: floresta_tileset_5
+  - first:
+      213: 3821817418751782929
+    second: floresta_tileset_10
+  - first:
+      213: 6260163168004920729
+    second: floresta_tileset_11
+  - first:
+      213: -1082013810805311471
+    second: floresta_tileset_12
+  - first:
+      213: -1409060351769403649
+    second: floresta_tileset_13
+  - first:
+      213: -9063582950203193638
+    second: floresta_tileset_14
+  - first:
+      213: 2127930538186033894
+    second: floresta_tileset_15
+  - first:
+      213: 1074050934412142680
+    second: floresta_tileset_16
+  - first:
+      213: 4707186960758580443
+    second: floresta_tileset_17
+  - first:
+      213: -3909180357480920758
+    second: floresta_tileset_22
+  - first:
+      213: -7469355660213320209
+    second: floresta_tileset_23
+  - first:
+      213: 2689748395354188370
+    second: floresta_tileset_24
+  - first:
+      213: -8484626243341798937
+    second: floresta_tileset_25
+  - first:
+      213: -3396173547384717629
+    second: floresta_tileset_27
+  - first:
+      213: 6036072515291881418
+    second: floresta_tileset_28
+  - first:
+      213: -7423839326346920638
+    second: floresta_tileset_30
+  - first:
+      213: -3533187179689199651
+    second: floresta_tileset_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: floresta_tileset_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 641
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -79, y: -14}
+        - {x: -27, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35ec2cf10b3fd240800000000000000
+      internalID: 4818635006021526847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 641
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -80, y: -14}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c9055962ff1c450800000000000000
+      internalID: 6107443110870031447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 641
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -80, y: -14}
+        - {x: -80, y: -80}
+        - {x: 33, y: -80}
+        - {x: 80, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbdbc9fd26c9b5e0800000000000000
+      internalID: -1893264267565868034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 641
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -80, y: -14}
+        - {x: -76, y: -33}
+        - {x: -63, y: -43}
+        - {x: -55, y: -61}
+        - {x: -28, y: -76}
+        - {x: -14, y: -77}
+        - {x: 2, y: -80}
+        - {x: 56, y: -47}
+        - {x: 76, y: -42}
+        - {x: 80, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde1bf0d6ae75f1f0800000000000000
+      internalID: -1011763286339019044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 641
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44499721c1ecb730800000000000000
+      internalID: 4016333187416933455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 481
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -40, y: -33}
+        - {x: -40, y: -80}
+        - {x: 43, y: -80}
+        - {x: 43, y: -33}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110b91981b2d90530800000000000000
+      internalID: 3821817418751782929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_11
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 481
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -40, y: 29}
+        - {x: -40, y: -80}
+        - {x: 43, y: -80}
+        - {x: 43, y: 29}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995dae8cb3190e650800000000000000
+      internalID: 6260163168004920729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 321
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -69, y: -80}
+        - {x: 72, y: -80}
+        - {x: 42, y: -46}
+        - {x: 42, y: 35}
+        - {x: -40, y: 35}
+        - {x: -40, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118f1ecfb2aebf0f0800000000000000
+      internalID: -1082013810805311471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_13
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 321
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -40, y: 80}
+        - {x: -40, y: -46}
+        - {x: -69, y: -80}
+        - {x: 72, y: -80}
+        - {x: 43, y: -45}
+        - {x: 43, y: 80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe92b95313027ce0800000000000000
+      internalID: -1409060351769403649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_14
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 321
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -69, y: -80}
+        - {x: 72, y: -80}
+        - {x: 43, y: -45}
+        - {x: 43, y: 80}
+        - {x: -40, y: 80}
+        - {x: -40, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad60ad4e35fa73280800000000000000
+      internalID: -9063582950203193638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 161
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -68, y: 65}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 65}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eac84bdc8de78d10800000000000000
+      internalID: 2127930538186033894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 161
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -80, y: 65}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 65}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858ef4062abc7ee00800000000000000
+      internalID: 1074050934412142680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 161
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 69, y: 65}
+        - {x: -80, y: 65}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4ad5fd999435140800000000000000
+      internalID: 4707186960758580443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 161
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 33, y: -30}
+        - {x: -3, y: -22}
+        - {x: -38, y: -31}
+        - {x: -66, y: -54}
+        - {x: -80, y: -80}
+        - {x: 75, y: -80}
+        - {x: 57, y: -48}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a494a653d2dcfb9c0800000000000000
+      internalID: -3909180357480920758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe58ee3f994875890800000000000000
+      internalID: -7469355660213320209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a63482ae7e35520800000000000000
+      internalID: 2689748395354188370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_25
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1b7a9926d804a80800000000000000
+      internalID: -8484626243341798937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -66, y: 64}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 64}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce3e80072e5ed0d0800000000000000
+      internalID: -3396173547384717629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -80, y: 64}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 70, y: 64}
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf9870e8ff64c350800000000000000
+      internalID: 6036072515291881418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_30
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 80, y: -80}
+        - {x: 80, y: 5}
+        - {x: 62, y: -5}
+        - {x: -6, y: -4}
+        - {x: -55, y: -37}
+        - {x: -80, y: -80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d3483477939f890800000000000000
+      internalID: -7423839326346920638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floresta_tileset_31
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1
+        width: 160
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 55, y: -32}
+        - {x: 31, y: -7}
+        - {x: 0, y: 10}
+        - {x: -41, y: 14}
+        - {x: -80, y: 5}
+        - {x: -80, y: -80}
+        - {x: 74, y: -80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd739adcaf897fec0800000000000000
+      internalID: -3533187179689199651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
