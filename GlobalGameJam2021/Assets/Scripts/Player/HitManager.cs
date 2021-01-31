@@ -10,7 +10,7 @@ public class HitManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Spike")
+        if(collision.gameObject.tag == "Spike" || collision.gameObject.tag == "Death")
         {
             StartCoroutine(StartDeath());
         }
@@ -28,6 +28,6 @@ public class HitManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        FindObjectOfType<GoToScene>().RemoteTransite(scene, portalIndex);
+        FindObjectOfType<GoToScene>().RemoteTransite(scene, portalIndex, true);
     }
 }

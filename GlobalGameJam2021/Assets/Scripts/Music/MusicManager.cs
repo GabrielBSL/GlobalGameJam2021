@@ -30,6 +30,8 @@ public class MusicManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
         audioSource = GetComponent<AudioSource>();
+
+        audioSource.Play();
     }
 
     public void changeMusic(string name)
@@ -56,13 +58,13 @@ public class MusicManager : MonoBehaviour
 
     IEnumerator MusicFadeIn(int goTo, float duration)
     {
+        audioSource.Play();
+
         while (audioSource.volume < 1)
         {
             audioSource.volume = Mathf.MoveTowards(audioSource.volume, 1, Time.deltaTime / duration);
             yield return null;
         }
-
-        audioSource.Play();
     }
 
     IEnumerator MusicFadeOut(int goTo, float duration)

@@ -360,9 +360,12 @@ public class PlayerController : MonoBehaviour
 
     public void killPlayer()
     {
-        rigidbody.velocity = Vector2.zero;
-        rigidbody.gravityScale = 0;
         isDead = true;
+        GetComponent<BoxCollider2D>().enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
+        rigidbody.velocity = Vector3.zero;
+        rigidbody.bodyType = RigidbodyType2D.Static;
+        
         SetAnimation("death");
         PlaySFX("death");
     }
