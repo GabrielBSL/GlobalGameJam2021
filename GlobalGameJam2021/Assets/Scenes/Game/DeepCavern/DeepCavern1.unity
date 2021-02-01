@@ -577,9 +577,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 266903954}
-  scene: DeepCavern2
+  scene: Cemetery
   portalIndex: 1
-  nextMusic: 
+  nextMusic: Cemetery
 --- !u!61 &530175802
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -41,7 +41,7 @@ public class GoToScene : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
 
-        if(nextMusic != "" && !ignoreMusic)
+        if (nextMusic != "" && !ignoreMusic)
         {
             FindObjectOfType<MusicManager>().FadeOutMusic(FindObjectOfType<Fader>().faderTime);
         }
