@@ -8,22 +8,12 @@ public class DeepCavern : MonoBehaviour
     private bool transitioning = false;
     public GameObject enterCircle = null;
 
-    public bool goIn = false;
-
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.E) && playerOnContact && !transitioning)
         {
             transitioning = true;
-
-            if (goIn)
-            {
-                FindObjectOfType<GoToScene>().RemoteTransite("DeepCavern1", GoToScene.DestinationIdenifier.B, false);
-            }
-            else
-            {
-                FindObjectOfType<GoToScene>().RemoteTransite("Cemetery", GoToScene.DestinationIdenifier.C, false);
-            }
+            FindObjectOfType<GoToScene>().RemoteTransite("DeepCavern1", GoToScene.DestinationIdenifier.C, false);
         }
     }
 
