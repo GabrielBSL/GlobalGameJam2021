@@ -658,13 +658,35 @@ PrefabInstance:
     - target: {fileID: 2727891593903256280, guid: 37955a6350599ec4ca4a9f37006c6b20,
         type: 3}
       propertyPath: savedSprites.Array.data[0].name
-      value: gold
+      value: coleira
+      objectReference: {fileID: 0}
+    - target: {fileID: 2727891593903256280, guid: 37955a6350599ec4ca4a9f37006c6b20,
+        type: 3}
+      propertyPath: savedSprites.Array.data[1].name
+      value: amuleto
+      objectReference: {fileID: 0}
+    - target: {fileID: 2727891593903256280, guid: 37955a6350599ec4ca4a9f37006c6b20,
+        type: 3}
+      propertyPath: savedSprites.Array.data[2].name
+      value: carta
       objectReference: {fileID: 0}
     - target: {fileID: 2727891593903256280, guid: 37955a6350599ec4ca4a9f37006c6b20,
         type: 3}
       propertyPath: savedSprites.Array.data[0].sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9c465f345b69ad349b8e9ffd683a3e50,
+      objectReference: {fileID: 6876269490695819297, guid: 7b81629184ca2ea4ead1127e6f0183ff,
+        type: 3}
+    - target: {fileID: 2727891593903256280, guid: 37955a6350599ec4ca4a9f37006c6b20,
+        type: 3}
+      propertyPath: savedSprites.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: -6306291999957424483, guid: 7b81629184ca2ea4ead1127e6f0183ff,
+        type: 3}
+    - target: {fileID: 2727891593903256280, guid: 37955a6350599ec4ca4a9f37006c6b20,
+        type: 3}
+      propertyPath: savedSprites.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 3712916481928638078, guid: 7b81629184ca2ea4ead1127e6f0183ff,
         type: 3}
     - target: {fileID: 5309219500206659301, guid: 37955a6350599ec4ca4a9f37006c6b20,
         type: 3}

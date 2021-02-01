@@ -120,6 +120,7 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Space))
         {
             releasedJump = true;
+            holdingJump = false;
         }
     }
 
@@ -155,16 +156,8 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             rigidbody.velocity = Vector2.up * jumpForce;
 
-            if (jumpLimitCounter == 1)
-            {
-                SetAnimation("jump");
-                PlaySFX("jump");
-            }
-            else
-            {
-                SetAnimation("doublejump");
-                PlaySFX("doublejump");
-            }
+            SetAnimation("jump");
+            PlaySFX("jump");
         }
 
         else if (holdingJump)
