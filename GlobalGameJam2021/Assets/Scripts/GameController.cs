@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
 {
     public void ChangeScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        FindObjectOfType<GoToScene>().RemoteTransite("Cemetery", GoToScene.DestinationIdenifier.C, false);
     }
 
     public void CloseGame(){
