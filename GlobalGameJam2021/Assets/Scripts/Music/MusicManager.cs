@@ -63,9 +63,9 @@ public class MusicManager : MonoBehaviour
     {
         audioSource.Play();
 
-        while (audioSource.volume < 1)
+        while (audioSource.volume < .5f)
         {
-            audioSource.volume = Mathf.MoveTowards(audioSource.volume, 1, Time.deltaTime / duration);
+            audioSource.volume = Mathf.MoveTowards(audioSource.volume, .5f, Time.deltaTime / duration);
             yield return null;
         }
     }
